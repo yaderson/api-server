@@ -4,10 +4,7 @@ services:
     build: .
     restart: always
     ports:
-      - 80
-    args:
-      - VIRTUAL_HOST=api.hacktzi.tk
-      - PORT=80
+      - "80"
     environment:
       - VIRTUAL_HOST=api.hacktzi.tk
       - PORT=80
