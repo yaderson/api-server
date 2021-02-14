@@ -2,7 +2,8 @@ require('dotenv').config()
 
 const { uploadFile, uploadForm } = require('./controllers/uploads') 
 
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 80
+console.log("PORT: ",PORT)
 const HOST = process.env.HOST_NAME || 'http://localhost'
 const STATIC_PATH = process.env.STATIC_PATH || 'statics'
 
