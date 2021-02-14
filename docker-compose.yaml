@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  api-server:
+    name: api-server
+    build: .
+    ports:
+      - 80
+    environment:
+      - VIRTUAL_HOST=api.hacktzi.tk
+      - PORT=80
