@@ -1,13 +1,13 @@
 version: '3'
 services:
   api-server:
-    container_name: api-server
     build: .
     restart: always
-    expose:
-      - 80
     ports:
       - 80
+    args:
+      - VIRTUAL_HOST=api.hacktzi.tk
+      - PORT=80
     environment:
       - VIRTUAL_HOST=api.hacktzi.tk
       - PORT=80
