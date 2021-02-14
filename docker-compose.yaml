@@ -3,6 +3,7 @@ services:
   api-server:
     container_name: api-server
     build: .
+    restart: always
     ports:
       - 80
     environment:
