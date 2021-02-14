@@ -1,7 +1,7 @@
 version: "3.9"
 services:
   api-server:
-    name: api-server
+    container_name: api-server
     build: .
     ports:
       - 80
