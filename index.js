@@ -4,7 +4,7 @@ const { uploadFile, uploadForm } = require('./controllers/uploads')
 
 const PORT = process.env.PORT || 80
 console.log("PORT: ",PORT)
-const HOST = process.env.HOST_NAME || 'http://localhost'
+const HOST = process.env.HOST_NAME || 'https://api.hacktzi.tk'
 const STATIC_PATH = process.env.STATIC_PATH || 'statics'
 
 const fastify = require('fastify')({ logger: true })
@@ -25,11 +25,11 @@ fastify.get('/soy',() => {
 })
 
 // Test and dev route for manual test
-if(process.env.NODE_ENV == 'development'){
-  fastify.get('/', {
-    handler: uploadForm
-  })
-}
+// if(process.env.NODE_ENV == 'development'){
+//   fastify.get('/', {
+//     handler: uploadForm
+//   })
+// }
 
 
 const start = async () => {
