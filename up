@@ -1,1 +1,1 @@
-docker-compose -d --restart=always up --build
+docker-compose -d up --build
