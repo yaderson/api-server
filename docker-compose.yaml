@@ -1,6 +1,7 @@
 version: '3'
 services:
   api-server:
+    network: server-proxy-pass
     build: .
     restart: always
     ports:
