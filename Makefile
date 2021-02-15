@@ -1,4 +1,5 @@
-run:
+clone:
 	docker-compose up -d --build
-down:
+clone:
 	docker-compose down
+
