@@ -1,7 +1,8 @@
 version: '3'
 services:
   api-server:
-    network: server-proxy-pass
+    external_links:
+      - goofy_meninsky
     build: .
     restart: always
     ports:
