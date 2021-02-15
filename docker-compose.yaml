@@ -1,8 +1,9 @@
 version: '3'
 services:
   api-server:
-    external_links:
-      - goofy_meninsky
+    networks:
+      - default
+      - myserver_default
     build: .
     restart: always
     ports:
@@ -10,3 +11,6 @@ services:
     environment:
       - VIRTUAL_HOST=api.hacktzi.tk
       - PORT=80
+networks:
+  myserver_default:
+    external: true
