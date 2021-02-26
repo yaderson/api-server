@@ -3,7 +3,7 @@ services:
   api-server:
     networks:
       - default
-      - my-server_default
+      - myserver_default
     build: .
     restart: always
     ports:
