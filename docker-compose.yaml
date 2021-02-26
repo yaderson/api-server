@@ -3,7 +3,7 @@ services:
   api-server:
     networks:
       - default
-      - myserver_default
+      - my-server_nginx-proxy_1
     build: .
     restart: always
     ports:
@@ -12,5 +12,5 @@ services:
       - VIRTUAL_HOST=api.hacktzi.tk
       - PORT=80
 networks:
-  myserver_default:
+  my-server_nginx-proxy_1:
     external: true
