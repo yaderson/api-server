@@ -9,7 +9,7 @@ services:
     ports:
       - "80"
     environment:
-      - VIRTUAL_HOST=api.hacktzi.tk
+      - VIRTUAL_HOST=writer.hacktzi.com
       - PORT=80
 networks:
   my-server_default:
