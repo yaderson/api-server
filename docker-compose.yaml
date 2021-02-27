@@ -9,7 +9,7 @@ services:
     ports:
       - "80"
     environment:
-      - VIRTUAL_HOST=writer.hacktzi.com
+      - LETSENCRYPT_HOST=writer.hacktzi.com
       - VIRTUAL_HOST=writer.hacktzi.com
       - PORT=80
 networks:
